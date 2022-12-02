@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/dist/style.min.css" />
+  </head>
+  <body class="pt-5">
+    <div class="container d-flex justify-content-between w-100 h-75">
+      <div class="container__left overflow-hidden p-3 bg-white rounded-3">
+        <h1 class="text-center">VIRTUAL GLASSES</h1>
+        <div class="glasses-list d-flex flex-wrap">
+          <button class="glasses w-25" onclick="tryGlasses('G1')">
+            <img class="img-fluid" src="imgs/g1.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G2')">
+            <img class="img-fluid" src="imgs/g2.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G3')">
+            <img class="img-fluid" src="imgs/g3.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G4')">
+            <img class="img-fluid" src="imgs/g4.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G5')">
+            <img class="img-fluid" src="imgs/g5.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G6')">
+            <img class="img-fluid" src="imgs/g6.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G7')">
+            <img class="img-fluid" src="imgs/g7.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G8')">
+            <img class="img-fluid" src="imgs/g8.jpg" alt="" />
+          </button>
+          <button class="glasses w-25" onclick="tryGlasses('G9')">
+            <img class="img-fluid" src="imgs/g9.jpg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="container__right overflow-hidden position-relative bg-white rounded-3">
+        <div class="model w-100 position-absolute">
+          <img class="w-100 h-100" src="imgs/model.jpg" alt="" />
+          <img class="w-100 h-100 position-absolute" id="model-glasses" src="imgs/v1.png" alt="" />
+        </div>
+        <div class="btns mt-3 me-3 position-absolute">
+          <button type="button" class="btn btn-primary" onclick="tryOn(false)">Before</button>
+          <button type="button" class="btn btn-primary" onclick="tryOn(true)">After</button>
+        </div>
+        <div class="glasses-info w-100 px-3 py-2 position-absolute">
+          <h4 class="mb-3 text-white">NATTY ICE - Polo (Red, Black)</h4>
+          <span class="px-2 py-1 bg-danger rounded-2 text-white">$120</span>
+          <span class="ms-2 text-warning">Stocking</span>
+          <p class="mt-2 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
